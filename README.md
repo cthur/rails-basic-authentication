@@ -11,3 +11,5 @@ How to create this app:
   rake db:migrate
   rails generate controller sessions new
 
+-Gemfile
+  gem 'bcrypt', '~> 3.1.7'
