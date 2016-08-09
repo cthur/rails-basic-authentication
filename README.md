@@ -13,3 +13,11 @@ How to create this app:
 
 -Gemfile
   gem 'bcrypt', '~> 3.1.7'
+
+-config/routes.rb
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+  resources :users
+  resources :sessions
